@@ -1,0 +1,33 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+spring:
+  application:
+    name: spring-cloud-provider-01
+info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
+  app.name: wangk-microservicecloud
+  company.name: www.wangk.com
+  artifactId: @project.artifactId@
+  version: @project.version@
+#springadmin 监控服务
+management:
+  health:
+    db:
+      enabled: false
+    solr:
+      enabled: false #禁用solr检查
+    elasticsearch: #禁用elasticsearch检查
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      sensitive: false #关闭过滤敏感信息
+  endpoint:
+    health:
+      show-details: ALWAYS
