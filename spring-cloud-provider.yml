@@ -6,3 +6,11 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/
 
+spring:
+  application:
+    name: spring-cloud-provider-01
+info:
+  app.name: wangk-microservicecloud
+  company.name: www.wangk.com
+  artifactId: @project.artifactId@
+  version: @project.version@
