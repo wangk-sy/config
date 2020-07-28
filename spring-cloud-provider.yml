@@ -8,26 +8,26 @@ eureka:
 spring:
   application:
     name: spring-cloud-provider-01
-info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
+info:
   app.name: wangk-microservicecloud
   company.name: www.wangk.com
   artifactId: @project.artifactId@
   version: @project.version@
-#springadmin 监控服务
+
 management:
   health:
     db:
       enabled: false
     solr:
-      enabled: false #禁用solr检查
-    elasticsearch: #禁用elasticsearch检查
+      enabled: false
+    elasticsearch:
       enabled: false
   endpoints:
     web:
       exposure:
         include: "*"
     health:
-      sensitive: false #关闭过滤敏感信息
+      sensitive: false
   endpoint:
     health:
       show-details: ALWAYS
