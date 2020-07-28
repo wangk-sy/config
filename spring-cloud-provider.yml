@@ -34,4 +34,6 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+    shutdown: 
+      enable: false
 
