@@ -4,10 +4,10 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://127.0.0.1:7002/eureka/
+      defaultZone: http://127.0.0.1:7001/eureka/
 spring:
   application:
-    name: spring-cloud-provider-01
+    name: spring-cloud-provider-001
   rabbitmq:
     host: 192.168.6.2
     port: 15672
