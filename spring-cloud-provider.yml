@@ -10,7 +10,7 @@ spring:
     name: spring-cloud-provider-002
   rabbitmq:
     host: 192.168.6.2
-    port: 15672
+    port: 5672
     username: guest
     password: guest
 info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
