@@ -11,8 +11,6 @@ spring:
 info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
   app.name: wangk-microservicecloud
   company.name: www.wangk.com
-  artifactId: @project.artifactId@
-  version: @project.version@
 #springadmin 监控服务
 management:
   health:
